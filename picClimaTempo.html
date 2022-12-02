@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="climaTempo.css">
+    <link rel="shortcut icon" href="Icons/icons8-climate-64.png" type="image/x-icon">
+    <title>ClimaTempo</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="picHome.html">Início</a>
+        <a href="picRelevo.html">Relevo</a>
+        <a href="picClimaTempo.html">Clima e tempo</a>
+        <a href="picComoUsar.html">Como usar</a>
+    </div>
+      
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    
+    <div style="background-color: white; padding: 10px 80px; text-align: justify; margin-top: 5px;">
+        <p style>
+            O tempo é a influência do estado físico da atmosfera sobre a vida e as atividades do homem. O clima é o estudo do tempo para o determinado período em uma certa localização. Também, se refere às características da atmosfera inseridas das observações contínuas durante um certo período. O clima abrange maior número de dados e eventos possíveis das condições de tempo para uma determinada localidade ou região.
+        </p>
+    
+        <p>Na sequencia temos um exemplo de um mapa que mostra o clima, tempo e outras informações sobre toda a terra retirado do site <a style="color: #15B097;" href="https://www.windy.com/?-23.991,-47.444,7">Windy</a>.</p>
+
+        <div class="sketchfab-embed-wrapper" style="float: left; padding: 5px 25px 5px 0;">
+            <iframe width="940" height="480" src="https://embed.windy.com/embed2.html?lat=-22.969&lon=-46.879&detailLat=-23.991&detailLon=-47.444&width=940&height=480&zoom=7&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe></div>
+            <div class="textoapoio" style="clear: right; ">
+                <h1>Como usar esta API:</h1>
+                <p>1 - Com um clique do botão esquerdo do mouse (e arrastando) é possível mexer em torno do mapa.</p>
+                <p>2 - Usando a roda do mouse, para frente ou para trás, ou clicando nos simbolos "+" e "-", no canto superior direito, é possível dar zoom ou tirá-lo.</p>
+                <p>3 - É possível clicar nas cidades para obter mais informações sobre previsão do tempo, chuvas ou velocidade e direção dos ventos.</p>
+                <p>4 - No canto superior direito, (acima do simbolo "+") ao clicar na nuvem, será aberta uma lista com várias opções selecionáveis que mudarão o que está sendo mostrado no mapa.</p>
+                <p>5 - Dentro da lista com as opções, citada no tópico anterior, existe uma opção chamada de "mais camadas..." que, quando selecionada, revela outras opções e uma aba para pesquisa.</p>
+                <p>6 - Em baixo de "mais camadas..." existe uma barra onde é possivel regular a altura da qual está sendo mostrada a temperatura, vento ou qualquer outra informação (recomendamos deixar em superfície).</p>
+                <p>7 - Na barra no inferior da tela, é possivel deslizar pela data e horários da info a ser visualizada.</p>
+                <p>8 - No canto inferior esquerdo, um simbolo indica "play", este passará por todas as datas e horários da barra inferior.</p>
+                <p>9 - Por último, na parte de baixo da API, abaixo da barra das horas, é possivel ver uma legenda de cores sobre a opção selecionada.</p>
+            </div>
+            
+            <p style="clear: both;">Caso tenha dificuldades ou alguma curiosidade a mais sobre o esquema utilizado acima confira a pagina <a style="color: #15B097 ;" href="picComoUsar.html">Como usar</a>.</p>
+        <br>
+        <div class="gifselevation" style="background-color: #204e4ab9; padding: 5px 10px">
+        <h1>Utilizando o site Windy:</h1>
+        <center><img src="Imagens/GIFS PIC/GIF WINDY 1.gif" alt="WindyAPI" style="width: 1280px; height: 720px;"></center>
+        <p style="text-align: center; font-size: 20px;">No site Windy temos mais opções do que a API utilizada a cima mas todas bem parecidas. No canto direito temos as opções de camadas juntamente com a "mais camadas..." que mostra mais camadas diferentes para serem utilizadas, temos a barra inferior que mostra a previsão de datas futuras sobre a camada escolhida, no canto inferior direito é possivel ver a legenda de cor e por fim é possivel clicar nas cidades para vermos a previsão com mais detalhes na area escolhida.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+        </script>
+
+
+
+
+</body>
+</html>

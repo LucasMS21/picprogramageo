@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="relevo.css">
+    <link rel="shortcut icon" href="Icons/icons8-mountain-48.png" type="image/x-icon">
+    
+    <title>Relevo</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="picHome.html">Início</a>
+        <a href="picRelevo.html">Relevo</a>
+        <a href="picClimaTempo.html">Clima e tempo</a>
+        <a href="picComoUsar.html">Como usar</a>
+    </div>
+      
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+
+
+    <div style="background-color: white; padding: 10px 80px; text-align: justify; margin-top: 5px;">
+        <p style>
+            O relevo é a parte superficial da camada mais externa da terra. É onde as mudanças geológicas se mostram mais nitidas. Podemos definir o relevo como o conjunto de formas físicas que compõem a superfície da Terra.
+        </p>
+
+        <p>Na sequencia temos um exemplo de Relevo em 3D retirado do site <a style="color: #15B097;" href="https://sketchfab.com/feed">SketchFab</a>.</p>
+
+        <div class="sketchfab-embed-wrapper" style="float: left; padding: 5px 25px 5px 0;">
+            <iframe title="Modelo Digital do Terreno - Chapada Diamantina" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="940" height="480" src="https://sketchfab.com/models/25b03dd4f19f46dc903557660670aa17/embed"></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"><a href="https://sketchfab.com/3d-models/modelo-digital-do-terreno-chapada-diamantina-25b03dd4f19f46dc903557660670aa17?utm_medium=embed&utm_campaign=share-popup&utm_content=25b03dd4f19f46dc903557660670aa17" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Modelo Digital do Terreno - Chapada Diamantina </a> by <a href="https://sketchfab.com/brgeo?utm_medium=embed&utm_campaign=share-popup&utm_content=25b03dd4f19f46dc903557660670aa17" target="_blank" style="font-weight: bold; color: #1CAAD9;"> BRGeo.org </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=25b03dd4f19f46dc903557660670aa17" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+        <div class="textoapoio" style="clear: right; ">
+            <h1>Como usar esta API:</h1>
+            <p>1 - Com um clique do botão esquerdo do mouse (e arrastando) é possível rotacionar em torno do modelo 3D.</p>
+            <p>2 - Com um clique do botão direito do mouse (e arrastando) é possível mover-se pelo modelo 3D, chegando a qualquer ponto do relevo.</p>
+            <p>3 - Com um duplo clique com o botão esquerdo do mouse, é possível focar em qualquer área do relevo.</p>
+            <p>4 - Com a roda do mouse, para trás ou para a frente, é possível dar zoom ou tirá-lo.</p>
+            <p>5 - No canto inferior esquerdo, ao clicar no símbolo de cubo, é possível ir até o site e procurar por mais modelos 3D.</p>
+            <p>6 - No canto inferior direito, existem várias opções, como tela cheia, visualizar em realidade aumentada e as configurações.</p>
+            <p>7 - No canto superior direito, opções como compartilhar ou parar a visualização.</p>
+            <p>8 - No canto superior esquerdo, apenas te leva para o mesmo modelo, mas dentro do site.</p>
+            <p>9 - Por último, no meio inferior onde fica a seleção de pontos de interesse no mapa, com nomes, também disponíveis no próprio modelo.</p>
+        </div>
+        
+        <p style="clear: both;">Caso tenha dificuldades ou alguma curiosidade a mais sobre o esquema utilizado acima confira a pagina <a style="color: #15B097 ;" href="picComoUsar.html">Como usar</a>.</p>
+        <br>
+        <div class="gifselevation" style="background-color: #204e4ab9; padding: 5px 10px">
+        <h1>Utilizando o site Elevation API:</h1>
+        <center><img src="Imagens/GIFS PIC/GIF ELEVATION 1.gif" alt="ElevationAPI" style="width: 720px; height: 360px;"></center>
+        <p style="text-align: center; font-size: 20px;">É possível, através da barra de pesquisa acima do mapa, encontrar quaisquer pontos do globo terrestre e selecionar o terreno do qual se deseja obter um modelo 3D em relevo, basta seguir as instruções dos GIFS. Através dos botões mais e menos podemos dar zoom ou tirar o zoom, para selecionar áreas maiores ou menores. Clicando no quadrado à esquerda (ou no círculo, dependendo do formato desejado) poderemos selecionar a área desejada para o modelo. Lembrando que quanto maior a área real, mais pesado se torna o modelo gerado. Também é possível remover a seleção de área através da lixeira, como mostra o GIF.</p>
+        <center><img src="Imagens/GIFS PIC/GIF ELEVATION 2.gif" alt="ElevationAPI2" style="width: 720px; height: 360px;"></center>
+        <p style="text-align: center; font-size: 20px;">Ao selecionar a área, para fazer a renderização do modelo, sempre utilizaremos uma dessas 3 opções. A primeira é a mais recomendada no geral para áreas maiores, enquanto a segunda opção é mais recomendadapara áreas menores, contendo a melhor qualidade de texturas, mas podendo apresentar áreas vazias. Por fim, a terceira é utilizada apenas para casos específicos onde se quer remover as árvores ou estruturas dentro da área. A segunda opção é a mais leve, seguida da primeira, sendo de escolha própria e sua preferência.</p>
+        <center><img src="Imagens/GIFS PIC/GIF ELEVATION 3.gif" alt="ElevationAPI3" style="width: 720px; height: 360px;"></center>
+        <p style="text-align: center; font-size: 20px;">As opções acima são de sua preferência, sendo recomendado o uso da configuração padrão. O multiplicador do eixo Z (direita) determina quão modificada vai ser a altura do relevo, sendo 1 padrão e 2 o máximo recomendado. Na esquerda é possível determinar a contagem de triângulos ou polígonos no modelo, sendo 50% a metade e 100% o total, apresentando melhor detalhamento do terreno, mas tornando-se mais pesado.</p>
+        <center><img src="Imagens/GIFS PIC/GIF ELEVATION 4.gif" alt="ElevationAPI4" style="width: 720px; height: 360px;"></center>
+        <p style="text-align: center; font-size: 20px;">Acima estão os provedores da imagem. Recomendamos o uso de um dos dois mostrados no GIF. A qualidade é de escolha própria, quanto maior, mais pesado, porém mais "bonito".</p>
+        <center><img src="Imagens/GIFS PIC/GIF ELEVATION 5.gif" alt="ElevationAPI5" style="width: 720px; height: 360px;"></center>
+        <p style="text-align: center; font-size: 20px;">Por fim, as opções finais. Da esquerda para a direita, pode-se gerar o modelo 3D após selecionar todas as opções anteriores, baixar as imagens do mapa selecionado no modo satélite ou mapa, baixar o modelo 3D (nenhum pouco recomendado), fazer as devidas atribuições ao site (apenas em caso de uso de imagem para certos fins, como este site por exemplo) e exportar o modelo para o site SketchFab mostrado no topo da pagina (sendo necessário criar uma conta no mesmo para exportar e postar seu modelos), respectivamente. Gerar o modelo 3D demanda um certo tempo, de acordo com o tamanho da área e o peso do modelo, de acordo com as opções selecionadas.</p>
+        </div>
+
+
+    </div>
+
+
+    <script>
+    function openNav() {
+    document.getElementById("mySidebar").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+        
+    
+    
+    
+</body> 
+</html>
+

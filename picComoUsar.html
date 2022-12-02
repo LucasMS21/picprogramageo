@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comoUsar.css">
+    <link rel="shortcut icon" href="Icons/icons8-help-16.png" type="image/x-icon">
+    <title>ComoUsar</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="picHome.html">Início</a>
+        <a href="picRelevo.html">Relevo</a>
+        <a href="picClimaTempo.html">Clima e tempo</a>
+        <a href="picComoUsar.html">Como usar</a>
+    </div>
+      
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    <div class="textoapoio">
+        <h1>Informações gerais do site:</h1>
+        <p>De maneira simples, tudo que se precisa saber para utilizar as funções do site está disponível nas respectivas páginas. Caso desperte alguma curiosidade sobre alguma parte do site basta clicar e testar por sua conta.</p>
+        <p>Ainda, para maior possibilidade de explorar todas as funções, disponibilizamos abaixo um código QR para que seja facilitado o acesso a estas informações.</p>
+        <p>Neste link você tem acesso ao nosso linktree, lugar onde são armazenados os outros links de forma prática e compacta.</p>
+        <p>Recomendamos fazer o download dos aplicativos, como o LandscapAR e o Windy para celulares, caso prefiram usá-los nos dispositivos móveis.</p>
+        <center><div style="display: inline-block;">
+        <img src="Imagens/unnamed.jpg" alt="LandscapAR" name="teste asdfdsflsdlf" style="width: 720px; height: 480px; padding-right: 100px;">    
+        <img src="Imagens/windy.jpg" alt="windyapp" style="width: 480px; height: 480px; border: 2px solid black;">
+        </div></center>
+        <p style="font-size: 16px; text-align: center;">Respectivamente, da esquerda para a direita, LandscapAR e WindyApp.</p>
+        <p>O aplicativo LandscapAR é responsável por transformar desenhos de curvas de nível em um modelo 3D bem básico, atráves da própria camera do celular.</p>
+        <p style="font-size: 24px;">Por fim, fica o QR Code citado anteriormente na página. Basta apontar a camera do celular com precisão e clicar no link que aparece na tela.</p>
+        <Center><img src="Imagens/WhatsApp Image 2022-11-29 at 19.34.48.jpeg" alt="QR Code" style="width: 480px; height: 480px;"></Center>
+        <p style="font-size: 24px; text-align: center;">Obrigado por usar o site!</p>
+    </div>
+
+    
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    
+</body>
+</html>

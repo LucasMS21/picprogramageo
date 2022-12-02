@@ -1,0 +1,52 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    background-color: #204E4A;
+    font: 400 15px/1.8 "Lato", sans-serif;;
+}
+body{
+  display: block;
+}
+div{
+  display: block;
+}
+
+.bckgnd1, .bckgnd2, .bckgnd3 {
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+.bckgnd1{
+    background-image: url("Imagens/68est-geografia.jpg");
+    min-height: 100%;
+}
+.bckgnd2{
+  background-image: url("Imagens/landscape-shot-of-beautiful-cholatse-mountains-next-to-a-body-of-water-in-khumbu-nepal.jpg");
+  min-height: 400px;
+}  
+.bckgnd3{
+  background-image: url("Imagens/storm-4651306_960_720.jpg");
+  min-height: 400px;
+}
+.caption{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.borda{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+
